@@ -14,7 +14,7 @@ const App = () => {
 
   const getLog = async (ip) => {
     try {
-        const response = await axios.post('https://bgy4oe2e5g.execute-api.us-east-1.amazonaws.com/produzione_web', { "ip": ip })
+        const response = await axios.post('https://bgy4oe2e5g.execute-api.us-east-1.amazonaws.com/produzione_web/log_anal', { "ip": ip })
         setContent(response.data.urls_count);
     }
     catch (errEx) {
